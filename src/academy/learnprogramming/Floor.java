@@ -1,0 +1,23 @@
+package academy.learnprogramming;
+
+import java.awt.geom.Area;
+
+public class Floor {
+    private double width;
+    private double length;
+
+    public Floor(double width, double length) {
+        this.width = width;
+        this.length = length;
+        if(this.width < 0){
+            this.width = 0;
+        }
+        if(this.length < 0) {
+            this.length = 0;
+        }
+    }
+    public double getArea(){
+        double totalArea = width * length;
+        return totalArea;
+    }
+}
